@@ -12,41 +12,55 @@
     </script>
 
     <style>
-      body {
-      }
+      # body {
+      # }
 
-      .all-pokemon-container > div {
-        border: 1px solid gold;
-        padding: 20px;
-        width: 400px;
-      }
+      # .pokemon-entries-container > div {
+      #   border: 1px solid gold;
+      #   padding: 20px;
+      #   width: 400px;
+      # }
 
-      .all-pokemon-container > div:hover {
-        background-color: gold;
-        color: black;
-      }
+      # .pokemon-entries-container > div:hover {
+      #   background-color: gold;
+      #   color: black;
+      # }
 
-      .all-pokemon-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: black;
-        color: gold;
-        font-size: 40px;
-      }
+      # .pokemon-entries-container {
+      #   display: flex;
+      #   justify-content: center;
+      #   align-items: center;
+      #   flex-direction: column;
+      #   background-color: black;
+      #   color: gold;
+      #   font-size: 40px;
+      # }
 
-      img {
-        height: 100px;
-        width: 100px;
-      }
+      # img {
+      #   height: 100px;
+      #   width: 100px;
+      # }
 
-      # .all-pokemon-container {
+      # .pokemon-entries-container {
       #   display: grid;
       #   grid-template-columns: repeat(5, 1fr);
       #   width: 100%;
       #   height: 100%;
       # }
+      
+      # root has top padding in application.scss
+      body {
+        background-color: black;
+      }
+
+      .pokemon-entries-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .pokemon-entry {
+        border: 1px solid white;
+      }
     </style>
   </head>
 
