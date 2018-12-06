@@ -1,3 +1,3 @@
 export const selectAllPokemon = (state) => {
-  return Object.values(state.entities.pokemons);
+  return Object.values(state.entities.pokemon);
 }

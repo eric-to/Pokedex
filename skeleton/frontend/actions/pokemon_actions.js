@@ -2,9 +2,9 @@ export const RECEIVE_ALL_POKEMON = 'RECEIVE_ALL_POKEMON';
 import * as APIUtil from '../util/api_util';
 
 // ACTION CREATOR
-export const receiveAllPokemon = (pokemons) => ({
+export const receiveAllPokemon = (pokemon) => ({
     type: RECEIVE_ALL_POKEMON,
-    pokemons
+    pokemon
 });
 
 // THUNK ACTION CREATOR - all in one step

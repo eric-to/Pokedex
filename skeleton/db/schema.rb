@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20170727020351) do
     t.index ["pokemon_id"], name: "index_items_on_pokemon_id"
   end
 
-  create_table "pokemons", force: :cascade do |t|
+  create_table "pokemon", force: :cascade do |t|
     t.string "name", null: false
     t.integer "attack", null: false
     t.integer "defense", null: false

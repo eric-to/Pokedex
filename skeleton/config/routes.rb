@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'static_pages#root'
 
   namespace :api, defaults: { format: :json } do
-    resources :pokemons, only: [:index, :show]
+    resources :pokemon, only: [:index, :show]
     resources :items, only: [:index]
   end
 end
